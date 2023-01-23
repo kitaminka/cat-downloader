@@ -27,7 +27,7 @@ namespace cat_downloader
                 {
                     for (int i = 0; i < this.numericUpDown1.Value; i++)
                     {
-                        await Task.Delay(10000);
+                        await Task.Delay(1000);
                         client.DownloadFile(new Uri("https://thiscatdoesnotexist.com/"), @"cat_" + i + 1 + ".png");
                     }
                 }
