@@ -111,6 +111,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Cat.png" />
     <None Include="Assets\Cat.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>
