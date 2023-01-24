@@ -32,10 +32,10 @@
             this.downloadCatsButton = new System.Windows.Forms.Button();
             this.numberOfCatsInput = new System.Windows.Forms.NumericUpDown();
             this.numberOfCatsLabel = new System.Windows.Forms.Label();
-            this.catPictureBox = new System.Windows.Forms.PictureBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.selectFolderButton = new System.Windows.Forms.Button();
             this.selectedFolderLabel = new System.Windows.Forms.Label();
+            this.catPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.numberOfCatsInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.catPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -75,18 +75,6 @@
             this.numberOfCatsLabel.TabIndex = 3;
             this.numberOfCatsLabel.Text = "Number of cats:";
             // 
-            // catPictureBox
-            // 
-            this.catPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("catPictureBox.Image")));
-            this.catPictureBox.InitialImage = null;
-            this.catPictureBox.Location = new System.Drawing.Point(40, 0);
-            this.catPictureBox.Margin = new System.Windows.Forms.Padding(0);
-            this.catPictureBox.Name = "catPictureBox";
-            this.catPictureBox.Size = new System.Drawing.Size(200, 200);
-            this.catPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.catPictureBox.TabIndex = 4;
-            this.catPictureBox.TabStop = false;
-            // 
             // folderBrowserDialog1
             // 
             this.folderBrowserDialog1.SelectedPath = ".";
@@ -113,6 +101,19 @@
             this.selectedFolderLabel.Size = new System.Drawing.Size(84, 13);
             this.selectedFolderLabel.TabIndex = 6;
             this.selectedFolderLabel.Text = "Selected folder: ";
+            // 
+            // catPictureBox
+            // 
+            this.catPictureBox.ErrorImage = null;
+            this.catPictureBox.Image = global::CatDownloader.Properties.Resources.Cat;
+            this.catPictureBox.InitialImage = null;
+            this.catPictureBox.Location = new System.Drawing.Point(40, 0);
+            this.catPictureBox.Margin = new System.Windows.Forms.Padding(0);
+            this.catPictureBox.Name = "catPictureBox";
+            this.catPictureBox.Size = new System.Drawing.Size(200, 200);
+            this.catPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.catPictureBox.TabIndex = 4;
+            this.catPictureBox.TabStop = false;
             // 
             // MainForm
             // 
