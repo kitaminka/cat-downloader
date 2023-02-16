@@ -37,6 +37,10 @@ namespace cat_downloader
                     {
                         var downloadingPath = folderBrowserDialog1.SelectedPath + "\\cat_" + DateTimeOffset.Now.ToUnixTimeSeconds() + ".png";
                         client.DownloadFile(new Uri("https://thiscatdoesnotexist.com/"), downloadingPath);
+                        this.Invoke((Action)delegate
+                        {
+                            this.downloadCatsButton.Text = "Downloading... " + (i + 1) + "/" + this.numberOfCatsInput.Value;
+                        });
                         await Task.Delay(1000);
                     }
                 }
